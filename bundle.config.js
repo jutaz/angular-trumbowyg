@@ -63,10 +63,10 @@ config.bundle['angular-trumbowyg'] = {
   }
 };
 
-config.bundle['angular-trumbowyg.min'] = deepExtend({
+config.bundle['angular-trumbowyg.min'] = deepExtend({}, config.bundle['angular-trumbowyg'], {
   options: {
     uglify: true
   }
-}, config.bundle['angular-trumbowyg']);
+});
 
 module.exports = config;
