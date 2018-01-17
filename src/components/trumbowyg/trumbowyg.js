@@ -89,7 +89,7 @@ angular.module('trumbowyg')
 
         this.$onInit = () => {
           this.ngModel.$render = () => {
-            const element = this.getElementReference();
+            const element = this.getEditorReference();
             element.trumbowyg('html', this.ngModel.$modelValue);
           };
         };
