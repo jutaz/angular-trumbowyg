@@ -55,6 +55,8 @@ angular.module('trumbowyg').component('trumbowyg', {
     this.initializeEditor = function (element, options) {
       element.trumbowyg(options).on('tbwchange', function () {
         return _this.updateModelValue();
+      }).on('tbwpaste', function () {
+        return _this.updateModelValue();
       });
       angular.forEach(TBW_EVENTS, function (event) {
         element.on('' + EVENTS_PREFIX + event, function () {
