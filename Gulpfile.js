@@ -55,6 +55,6 @@ gulp.task('clean', () => {
     .pipe(rimraf());
 });
 
-gulp.task('default', ['develop', 'watch']);
+gulp.task('default', ['watch']);
 gulp.task('build', ['bundle']);
 gulp.task('test', ['lint']);
