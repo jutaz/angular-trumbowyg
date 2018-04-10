@@ -82,7 +82,7 @@ angular.module('trumbowyg').component('trumbowyg', {
       }
 
       if (changes.ngDisabled) {
-        _this.trumbowyg(_this.ngDisabled ? 'disable' : 'enable');
+        element.trumbowyg(_this.ngDisabled ? 'disable' : 'enable');
       }
 
       if (changes.placeholder) {
